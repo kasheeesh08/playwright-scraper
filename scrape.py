@@ -1,7 +1,7 @@
 import asyncio
 from playwright.async_api import async_playwright
 
-SEEDS = list(range(5, 15))
+SEEDS = list(range(13, 23))
 BASE_URL = "https://sanand0.github.io/tdsdata/js_table/?seed="
 
 async def main():
