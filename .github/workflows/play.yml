@@ -1,0 +1,19 @@
+name: run
+
+on: [push]
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 24f3002855@ds.study.iitm.ac.in
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - run: pip install playwright && playwright install
+
+      - run: python scrape.py
